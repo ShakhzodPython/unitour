@@ -14,5 +14,5 @@ source ~/.bashrc  # or ~/.zshrc depending on your shell
 ```
 bun install
 bun run dev
-bun dev build
+bun run build
 ```
