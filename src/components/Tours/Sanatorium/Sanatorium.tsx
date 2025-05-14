@@ -1,6 +1,6 @@
 import styles from "./Sanatorium.module.scss";
 import cardImageUzbekistan from "../../../assets/images/card._image.png";
-import posterImage from "../../../assets/images/Image.png";
+import posterImage from "../../../assets/images/sanatorium-main.png";
 import cardImageEurope from "../../../assets/images/card_image2.png";
 import check from "../../../assets/icons/check.svg";
 import ticket from "../../../assets/icons/ticket.svg";
