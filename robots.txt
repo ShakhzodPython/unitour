@@ -1,0 +1,11 @@
+# Allow all bots to crawl the entire site
+User-agent: *
+Disallow: /private/
+Disallow: /admin/
+Disallow: /user-profile/
+
+# Allow bots to access a specific directory
+Allow: /public/
+
+# Specify the location of your sitemap
+Sitemap: https://www.example.com/sitemap.xml

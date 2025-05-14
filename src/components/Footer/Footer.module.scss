@@ -1,0 +1,111 @@
+.footer {
+  margin-top: 200px;
+
+  &_container {
+    position: relative;
+    max-width: 1760px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @media (max-width: 1440px) {
+      max-width: 1320px;
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 950px;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: #f1f1f1;
+    }
+
+    &::before {
+      top: 0;
+    }
+  }
+
+  &_content {
+    margin-top: 50px;
+    display: flex;
+    align-items: stretch;
+    gap: 170px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_layout {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      &_subtitle {
+        font-family: var(--font-poppins);
+        font-weight: 500;
+        font-size: 24px;
+        color: var(--text-color);
+      }
+
+      &_medias {
+        display: flex;
+        align-items: center;
+        gap: 33px;
+      }
+    }
+
+    &_columns {
+      display: flex;
+      align-items: stretch;
+      gap: 170px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &_list {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        &_title {
+          position: relative;
+          font-family: var(--font-poppins);
+          font-weight: 500;
+          font-size: 24px;
+          color: var(--text-color);
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            width: 4px;
+            height: 50px;
+            border-radius: 10px;
+            background: #df6951;
+            transform: rotate(90deg);
+          }
+        }
+
+        &_links a {
+          font-family: var(--font-poppins);
+          font-weight: 400;
+          font-size: 20px;
+          color: var(--text-color);
+        }
+      }
+    }
+  }
+}

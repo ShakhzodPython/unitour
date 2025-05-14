@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Poppins:wght@400;500;600;700&family=Roboto&display=swap");
+
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-golos-text: "Golos Text", sans-serif;
+  --text-color: "#111";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}

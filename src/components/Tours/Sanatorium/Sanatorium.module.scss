@@ -1,0 +1,120 @@
+.tours_in_uzbeksitan_layout {
+  margin-top: 100px;
+
+  &_container {
+    max-width: 1720px;
+    margin: 0 auto;
+
+    @media (max-width: 1440px) {
+      max-width: 1320px;
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 950px;
+    }
+  }
+
+  &_poster {
+    display: flex;
+    align-items: center;
+    gap: 157px;
+
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+      gap: 0;
+    }
+
+    &_image {
+      img {
+        width: 100%;
+      }
+    }
+
+    &_details {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 890px;
+      height: 497px;
+
+      @media (max-width: 768px) {
+        width: 390px;
+        height: 218px;
+      }
+
+      &_subtitle {
+        font-family: var(--font-poppins);
+        font-weight: 600;
+        font-size: 26px;
+        text-transform: uppercase;
+        color: #df6951;
+      }
+
+      &_title {
+        font-family: var(--font-poppins);
+        font-weight: 700;
+        font-size: 66px;
+        text-transform: uppercase;
+        color: var(--text-color);
+      }
+
+      &_description {
+        font-family: var(--font-poppins);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 167%;
+        color: #5e6282;
+      }
+
+      &_button {
+        cursor: pointer;
+        max-width: 209px;
+        height: 60px;
+        padding: 12px 50px;
+        border: none;
+        border-radius: 50px;
+        background: #df6951;
+
+        span {
+          font-family: var(--font-poppins);
+          font-weight: 500;
+          font-size: 19px;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &_cards {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    @media (max-width: 1440px) {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      max-width: 900px;
+      margin: 200px auto;
+    }
+
+    @media (max-width: 1024px) {
+      margin-top: 50%;
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 700px;
+      margin-left: 150px;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (max-width: 430px) {
+      margin-right: 150px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
